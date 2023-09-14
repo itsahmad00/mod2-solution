@@ -1,0 +1,112 @@
+ *
+        {
+            box-sizing: border-box;
+        }
+
+        body
+        {
+            background-color: #dedede;
+            font-family: 'Balsamiq Sans', sans-serif;
+            
+          
+        }
+
+        .head
+        {
+            text-align: center;
+            font-size: 33px;
+            font-weight: bold;
+            margin: 45px 0px 65px 0px;
+            
+        }
+
+        .content
+        {
+            display: flex;
+            
+        }
+
+        .section1, .section2, .section3
+        {
+            
+            position: relative;
+            background-color: #9e9d9d;
+            height: auto;
+            border: 3px solid black;
+            padding: 30px 5px 0px 8px;
+            margin: 10px;            
+        }
+
+        .title
+        {
+    
+         position: absolute;
+         top: 0;
+         right: 0;
+         border-bottom: 2px solid black;
+         border-left: 2px solid black;
+         font-size: 22px;
+         font-weight: bold;
+         padding: 1px 45px;
+    
+         }
+
+        .section1 span
+        {
+            background-color: #edabab;
+        }
+
+        .section2 span
+        {
+            background-color: #913939;
+            color: white;
+        }
+
+        .section3 span
+        {
+            background-color: #c4bd76;
+        }
+
+        p
+        {
+            word-spacing: 1px;
+        }
+
+       
+
+       
+    @media (min-width: 768px) and (max-width: 991px) 
+    {
+        .content 
+        {
+            flex-wrap: wrap; /* Allow items to wrap to the next line */
+        }
+
+        .section1, .section2 
+        {
+            width: 50%;
+            flex: 1;
+        }
+
+        .section3 
+        {
+            width: 100%; /* Make section3 take up the full width */
+        }
+    
+    }
+
+
+
+     @media (max-width: 767px)
+    {
+         .content
+         {
+                flex-direction: column;
+                align-items: center;
+         }
+
+            .section1, .section2, .section3
+            {
+                width: 100%;
+            }
+        }
